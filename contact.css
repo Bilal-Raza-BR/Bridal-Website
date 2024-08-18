@@ -1,0 +1,227 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(225 225 225 0.5);
+    box-shadow: 0px 0px 5px 5px goldenrod;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(30px);
+}
+
+.logo img {
+    width: 150px;
+    filter: drop-shadow(0px 0px 1px rgb(10, 10, 10));
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.979);
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+
+
+
+
+}
+
+.navbar li {
+    /* border-radius: 20px; */
+    
+    padding: 10px;
+width: 100px;
+text-align: center;
+    transition: 1.1s;
+  
+}
+
+.navbar {
+    padding-top: 40px;
+}
+
+.navbar a:hover{ 
+padding: 15px;
+transition: 1.1s;
+border-radius: 20px;
+box-shadow: 0px 0px 10px 2px goldenrod;
+}
+
+@media (max-width:704px) {
+
+    .header {
+        display: block;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: rgb(225 225 225 0.5);
+        box-shadow: 0px 0px 5px 5px goldenrod;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        backdrop-filter: blur(30px);
+    }
+    
+    .logo img {
+        width: 150px;
+        filter: drop-shadow(0px 0px 1px rgb(10, 10, 10));
+    
+    }
+    
+    .navbar ul {
+        display: flex;
+     justify-content:space-around;
+     
+text-align: center;
+padding-bottom: 20px;
+    }
+    
+    .navbar li {
+        list-style: none;
+    }
+    
+    .navbar a {
+        color: rgba(255, 255, 255, 0.979);
+        font-size: 10px;
+        font-weight: lighter;
+        text-decoration: none;
+    
+    
+    
+    
+    }
+    
+    .navbar li {
+        border-radius: 20px;
+        
+        padding: 5px;
+    width: 100px;
+    text-align: center;
+        transition: 1.1s;
+      
+    }
+    
+    .navbar {
+        padding-top: 5px;
+    }
+    
+    
+.navbar a:hover{ 
+    padding: 15px;
+    transition: 1.1s;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px goldenrod;
+    }
+    
+        
+
+
+}
+
+
+
+/* this is cover area  */
+.cover{
+    background-image: url("https://reviewit.pk/wp-content/uploads/2021/02/FotoJet-2021-02-20T000035.798.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1700px;
+    padding-top: 200px;
+    text-align: center;
+    
+}
+.cover h1{
+    color: white;
+    font-size: 60px;
+}
+.cover p{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.info{
+    background-color: rgb(225 225 225 0.5); 
+    backdrop-filter: blur(30px);
+    padding: 60px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid goldenrod;
+    border-radius: 50px;
+    position: relative;
+}
+.info svg{
+    width: 100px;
+}
+.info h3{
+    color: white;
+    font-size: 100%;
+
+}
+@media ( max-width:662px){
+
+
+    .info{
+        background-color: rgb(225 225 225 0.5); 
+        backdrop-filter: blur(30px);
+        padding:20px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        line-height: 50px;
+        border: 2px solid goldenrod;
+        border-radius: 50px;
+        position: relative;
+    }
+    .info svg{
+        width: 100px;
+    }
+    .info h3{
+        color: white;
+        font-size: 55%;
+    
+    }
+
+}
+
+
+
+/* footer work is here  */
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color:rgb(218, 165, 32);
+    
+padding: 50px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: lighter;
+    color: white;
+    box-shadow: 0px 0px 10px 2px white;
+ }
