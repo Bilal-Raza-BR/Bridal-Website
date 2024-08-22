@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 .header {
     display: flex;
     justify-content: space-evenly;
@@ -19,6 +20,7 @@
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(30px);
+    font-weight: 500;
 }
 
 .logo img {
@@ -40,8 +42,9 @@
 .navbar a {
     color: rgba(255, 255, 255, 0.979);
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 500;
     text-decoration: none;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.747);
 
 
 
@@ -104,9 +107,10 @@ padding-bottom: 20px;
     
     .navbar a {
         color: rgba(255, 255, 255, 0.979);
-        font-size: 10px;
-        font-weight: lighter;
+        font-size: 15px;
+        font-weight: 500;
         text-decoration: none;
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.747);
     
     
     
@@ -179,12 +183,23 @@ padding-bottom: 20px;
 }
 .info svg{
     width: 100px;
+    transition: 1.5s;
 }
 .info h3{
     color: white;
     font-size: 100%;
 
 }
+
+.info svg:hover{
+    filter: drop-shadow(0px 0px 20px rgb(8, 211, 247));
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+
+
+
 @media ( max-width:662px){
 
 
@@ -208,7 +223,12 @@ padding-bottom: 20px;
         font-size: 55%;
     
     }
-
+    .info svg:hover{
+        filter: drop-shadow(0px 0px 20px rgb(8, 211, 247));
+        transition: 1.5s;
+        transform: scale(1.2);
+    }
+    
 }
 
 
@@ -218,8 +238,8 @@ padding-bottom: 20px;
 .footer{
     width: 100%;
     height: 200px;
-    background-color:rgb(218, 165, 32);
-    
+    background: rgb(0,13,13);
+    background: linear-gradient(0deg, rgba(0,13,13,1) 0%, rgba(187,133,14,1) 100%);
 padding: 50px 10px;
     display: flex;
     justify-content: space-around;
@@ -228,4 +248,8 @@ padding: 50px 10px;
     font-weight: lighter;
     color: white;
     box-shadow: 0px 0px 10px 2px white;
+    font-weight: 500;
+ }
+ .footer a{
+    color: rgb(17, 174, 247);
  }
